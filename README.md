@@ -10,7 +10,7 @@ The idea of this library is to force using semantic-release rules in commit-mess
 
 Run
 ```
-composer install commit-msg --dev
+composer require commit-msg --dev
 ```
 
 This will replace commit-msg in your .git/hooks folder with code, that will run checks on every git commit.
