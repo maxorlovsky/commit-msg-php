@@ -1,5 +1,5 @@
 <?php
-$commitMsgFile = __DIR__ . '/.git/hooks/commit-msg';
+$commitMsgFile = __DIR__ . '/../../../.git/hooks/commit-msg';
 
 // Stop if file does not exist
 if (!file_exists($commitMsgFile)) {

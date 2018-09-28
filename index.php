@@ -5,10 +5,10 @@ class commitMsg {
     private $message;
 
     public function __construct() {
-        $this->composer = json_decode(file_get_contents(__DIR__ . '/composer.json'));
+        $this->composer = json_decode(file_get_contents(__DIR__ . '/../../../composer.json'));
 
-        if (file_exists(__DIR__ . '/.git/COMMIT_EDITMSG')) {
-            $this->message = file_get_contents(__DIR__ . '/.git/COMMIT_EDITMSG');
+        if (file_exists(__DIR__ . '/../../../.git/COMMIT_EDITMSG')) {
+            $this->message = file_get_contents(__DIR__ . '/../../../.git/COMMIT_EDITMSG');
         }
 
         $this->config = [
