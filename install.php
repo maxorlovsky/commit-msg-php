@@ -22,7 +22,8 @@ if (file_exists($commitMsgFile)) {
 // Content of commit-msg hook
 $commitMsgContent =
 '#!/bin/bash
-./vendor/maxorlovsky/commit-msg-php/commit-msg
+PHP=`which php 2> /dev/null`
+$PHP ./vendor/maxorlovsky/commit-msg-php/index.php
 RESULT=$?
 [ $RESULT -ne 0 ] && exit 1
 exit 0';
