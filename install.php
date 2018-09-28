@@ -49,7 +49,7 @@ try {
 }
 
 try {
-    chmod($commitMsgFile, '0777');
+    chmod($commitMsgFile, 0777);
 } catch (Exception $e) {
     echo 'git-commit-msg:';
     echo "\r\n";
