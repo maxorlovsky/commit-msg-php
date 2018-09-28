@@ -23,7 +23,7 @@
         "php" : "~5.6|~7.0"
     },
     "scripts": {
-        "post-package-install": "php install.php",
+        "post-install-cmd": "php install.php",
         "pre-package-uninstall": "php uninstall.php"
     },
     "config": {
