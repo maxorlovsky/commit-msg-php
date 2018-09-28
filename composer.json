@@ -1,0 +1,50 @@
+{
+    "name": "maxorlovsky/commit-msg-php",
+    "type": "library",
+    "description": "commit-msg-php is a commit-msg hook installer for git with configuration available in composer.json",
+    "keywords": [
+        "git",
+        "hooks",
+        "commit-msg",
+        "git commit msg",
+        "commit message"
+    ],
+    "homepage": "https://github.com/maxorlovsky/commit-msg-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Orlovsky",
+            "email": "max.orlovsky@gmail.com",
+            "homepage": "https://maxorlovsky.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.6|~7.0"
+    },
+    "scripts": {
+        "post-package-install": "php install.php",
+        "pre-package-uninstall": "php uninstall.php"
+    },
+    "config": {
+        "sort-packages": true,
+        "commit-msg": {
+            "types": [
+                "feat",
+                "fix",
+                "chore",
+                "docs",
+                "refactor",
+                "style",
+                "perf",
+                "test",
+                "revert"
+            ],
+            "lineLength": 72,
+            "scope": {
+                "mandatory": false,
+                "rules": ""
+            }
+        }
+    }
+}
